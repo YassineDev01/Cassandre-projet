@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Client index{% endblock %}
+
+{% block body %}
+
+    <style>
+        /* =========================
+           VARIABLES
+        ========================= */
+        :root {
+            --color-primary: #28cb8b;
+            --color-secondary: #263238;
+            --color-success: #2e7d31;
+            --color-error: #e53835;
+            --green-shade-2: #388e3b;
+            --green-tint-2: #81c784;
+            --white: #ffffff;
+        }
+
+        /* =========================
+           TABLEAU
+        ========================= */
+        table.table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        table.table th, table.table td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        table.table th {
+            color: var(--secondary);
+            font-weight: 600;
+            border-bottom: 2px solid var(--green-shade-2); 
+        }
+
+      
+
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+        @media (max-width: 768px) {
+            table.table th, table.table td {
+                padding: 8px 10px;
+                font-size: 0.85rem;
+            }
+
+            .btn {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <h1>Client index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for client in clients %}
+            <tr>
+                <td>{{ client.id }}</td>
+                <td>{{ client.nom }}</td>
+                <td>{{ client.email }}</td>
+                <td>
+                    <a class="btn btn-primary" href="{{ path('app_clientcrud_show', {'id': client.id}) }}">Voire</a>
+                    <a class="btn btn-secondary" href="{{ path('app_clientcrud_edit', {'id': client.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">No records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('app_clientcrud_new') }}">Creez un client</a>
+
+{% endblock %}

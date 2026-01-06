@@ -1,0 +1,31 @@
+body {
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    margin-bottom: var(--space-md);
+    color: var(--color-dark);
+}
+
+p {
+    margin-bottom: var(--space-md);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+a:hover {
+    text-decoration: underline;
+}

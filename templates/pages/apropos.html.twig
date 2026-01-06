@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}À propos - Cassandre Communication{% endblock %}
+
+{% block body %}
+
+<section class="hero">
+    <div class="hero-image">
+        <img src="{{ asset('images/image4.png') }}" alt="Cybersécurité">
+    </div>
+    <div class="hero-content">
+        <h1>À propos de Cassandre Communication</h1>
+        <p>Cassandre Communication accompagne les entreprises et les particuliers
+        dans la maîtrise des enjeux de la cybersécurité et de la certification professionnelle.</p>
+        <a href="{{ path('app_contact') }}" class="btn btn-primary">Contactez-nous</a>
+    </div>
+    
+</section>
+
+
+<section class="about-content">
+    <div class="about-text">
+        <h2>Notre mission</h2>
+        <p>
+            Notre mission est de renforcer la sécurité des systèmes d'information
+            tout en garantissant une approche éthique, indépendante et conforme aux exigences réglementaires.
+        </p>
+
+        <h2>Nos activités</h2>
+        <ul>
+            <li>Audits de cybersécurité techniques et organisationnels</li>
+            <li>Accompagnement des entreprises et institutions</li>
+            <li>Certifications professionnelles en cybersécurité</li>
+            <li>Documentation et ressources pédagogiques</li>
+        </ul>
+
+        <h2>Nos valeurs</h2>
+        <p>
+            Confidentialité, rigueur, indépendance et transparence sont au cœur
+            de chacune de nos interventions.
+        </p>
+    </div>
+
+    <div class="about-image">
+        <img src="{{ asset('images/image6.png') }}" alt="Cybersécurité et audit">
+    </div>
+</section>
+
+<section class="about-stats">
+    <div class="stat">
+        <h3>10+</h3>
+        <p>Années d’expertise</p>
+    </div>
+    <div class="stat">
+        <h3>300+</h3>
+        <p>Entreprises accompagnées</p>
+    </div>
+    <div class="stat">
+        <h3>1 200+</h3>
+        <p>Professionnels certifiés</p>
+    </div>
+</section>
+
+{% endblock %}

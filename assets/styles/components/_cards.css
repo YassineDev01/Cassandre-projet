@@ -1,0 +1,17 @@
+.card {
+    background-color: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.card-header {
+    font-weight: bold;
+    margin-bottom: var(--space-sm);
+}
+
+.card-body {
+    font-size: 14px;
+    color: var(--color-dark);
+}

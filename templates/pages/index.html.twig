@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+{% block body %}
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Bienvenue chez Cassandre Communication</h1>
+        <p>Expertise en cybersécurité et certifications professionnelles. Gérez vos audits et certifications depuis une seule plateforme.</p>
+        <a href="{{ path('app_contact') }}" class="btn btn-primary">Contactez-nous</a>
+    </div>
+    <div class="hero-image">
+        <img src="{{ asset('images/image3.png') }}" alt="Cybersécurité">
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <h2>Nos services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Audits de cybersécurité</h3>
+            <p>Analyse complète des infrastructures et de l'organisation de votre entreprise pour détecter les vulnérabilités et renforcer la sécurité.</p>
+            <a href="{{ path('app_apropos') }}" class="btn btn-secondary">En savoir plus</a>
+        </div>
+        <div class="card">
+            <h3>Certifications professionnelles</h3>
+            <p>Formations et certifications pour particuliers souhaitant valoriser leurs compétences en cybersécurité.</p>
+            <a href="{{ path('app_apropos') }}" class="btn btn-secondary">Voir les certifications</a>
+        </div>
+        <div class="card">
+            <h3>Documentation et ressources</h3>
+            <p>Accédez à un catalogue de guides, tutoriels et bonnes pratiques pour approfondir vos connaissances.</p>
+            <a href="{{ path('app_apropos') }}" class="btn btn-secondary">Explorer</a>
+        </div>
+    </div>
+</section>
+
+<!-- STATISTIQUES -->
+<section class="stats">
+    <div class="stat">
+        <h3>2,500+</h3>
+        <p>Audits réalisés</p>
+    </div>
+    <div class="stat">
+        <h3>1,200+</h3>
+        <p>Candidats certifiés</p>
+    </div>
+    <div class="stat">
+        <h3>300+</h3>
+        <p>Entreprises clientes</p>
+    </div>
+</section>
+
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Client{% endblock %}
+
+{% block body %}
+
+    <style>
+        table.table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-radius: 6px;
+        }
+
+        table.table th, table.table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--green-tint-2);
+        }
+
+        table.table th {
+            width: 30%;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+    
+    </style>
+
+    <h1>Client</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ client.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ client.nom }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ client.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top:15px;">
+        <a class="btn btn-primary" href="{{ path('app_clientcrud_index') }}">Back to list</a>
+        <a class="btn btn-success" href="{{ path('app_clientcrud_edit', {'id': client.id}) }}">Modifier</a>
+        {{ include('clientcrud/_delete_form.html.twig') }}
+    </div>
+
+{% endblock %}
