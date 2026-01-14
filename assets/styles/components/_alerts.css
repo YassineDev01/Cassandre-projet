@@ -1,22 +1,18 @@
 .alert {
-    padding: var(--space-sm) var(--space-md);
-    border-radius: var(--radius-sm);
-    margin-bottom: var(--space-md);
-    color: white;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    margin-bottom: 16px;
 }
 
 .alert-success {
-    background-color: var(--color-success);
+    background: #e8f5e9;
+    color: var(--success);
 }
-
 .alert-error {
-    background-color: var(--color-error);
+    background: #fdecea;
+    color: var(--error);
 }
-
 .alert-warning {
-    background-color: var(--color-warning);
-}
-
-.alert-info {
-    background-color: var(--color-info);
+    background: #fff3e0;
+    color: var(--warning);
 }

@@ -1,33 +1,6 @@
-/* Reset CSS simple */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+/* RESET GLOBAL */
+* {
     margin: 0;
     padding: 0;
-}
-
-html,
-body {
-    height: 100%;
-    font-family: var(--font-base);
-    line-height: 1.5;
-    color: var(--color-dark);
-    background-color: var(--color-light);
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
+    box-sizing: border-box;
 }

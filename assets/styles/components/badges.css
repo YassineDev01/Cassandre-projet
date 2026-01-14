@@ -1,0 +1,18 @@
+.badge {
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: var(--radius-sm);
+}
+
+.badge-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+.badge-success {
+    background: var(--success);
+    color: var(--white);
+}
+.badge-info {
+    background: var(--info);
+    color: var(--white);
+}

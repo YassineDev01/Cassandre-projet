@@ -1,25 +1,25 @@
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
 input,
 textarea,
 select {
     width: 100%;
-    padding: var(--space-sm);
-    margin-bottom: var(--space-md);
+    padding: 12px;
     border-radius: var(--radius-sm);
-    border: 1px solid #ccc;
-    font-family: var(--font-base);
-    font-size: 16px;
+    border: 1px solid var(--grey-blue);
 }
 
 input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 2px rgba(40, 203, 139, 0.2);
-}
-
-label {
-    display: block;
-    margin-bottom: 4px;
-    font-weight: 500;
+    border-color: var(--primary);
 }
