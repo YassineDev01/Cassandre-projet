@@ -1,0 +1,45 @@
+/* =========================
+   BOUTONS
+========================= */
+.btn {
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+.btn-primary:hover {
+    background-color: var(--green-shade-2);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--white);
+}
+.btn-secondary:hover {
+    background-color: var(--d-grey);
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    color: var(--white);
+}
+.btn-warning {
+    background-color: var(--color-warning);
+    color: var(--black);
+}
+.btn-error {
+    background-color: var(--color-error);
+    color: var(--white);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

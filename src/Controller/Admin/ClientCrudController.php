@@ -6,6 +6,8 @@ use App\Entity\Client;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Filters;
+use EasyCorp\Bundle\EasyAdminBundle\Filter\TextFilter;
 
 class ClientCrudController extends AbstractCrudController
 {
@@ -21,5 +23,12 @@ class ClientCrudController extends AbstractCrudController
             TextField::new('nom', 'Nom'),
             TextField::new('email', 'Email'),
         ];
+    }
+
+    public function configureFilters(Filters $filters): Filters
+    {
+        return $filters
+            ->add(TextFilter::new('nom', 'Nom'))
+            ->add(TextFilter::new('email', 'Email'));
     }
 }

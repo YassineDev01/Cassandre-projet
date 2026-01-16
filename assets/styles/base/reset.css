@@ -1,0 +1,44 @@
+.cintaner {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+}
+h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.body-1 {
+    font-size: 18px;
+    line-height: 28px;
+}
+.body-3 {
+    font-size: 14px;
+    line-height: 20px;
+}
+.body-4 {
+    font-size: 12px;
+    line-height: 16px;
+}

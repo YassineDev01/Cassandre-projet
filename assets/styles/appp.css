@@ -1,0 +1,17 @@
+@import "./base/base.css";
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/typography.css";
+
+@import "./components/alerts.css";
+@import "./components/buttons.css";
+@import "./components/cards.css";
+@import "./components/forms.css";
+@import "./components/badges.css";
+@import "./components/table.css";
+
+@import "./layout/footer.css";
+@import "./layout/header.css";
+@import "./layout/layout.css";
+
+@import "./pages/accueil.css";

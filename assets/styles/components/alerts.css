@@ -5,14 +5,14 @@
 }
 
 .alert-success {
-    background: #e8f5e9;
+    background-color: #e6f4ea;
     color: var(--success);
 }
 .alert-error {
-    background: #fdecea;
+    background-color: #fdecea;
     color: var(--error);
 }
 .alert-warning {
-    background: #fff3e0;
+    background-color: #fff4e5;
     color: var(--warning);
 }

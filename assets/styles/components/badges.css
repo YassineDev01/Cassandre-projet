@@ -1,7 +1,11 @@
 .badge {
-    padding: 4px 10px;
-    font-size: 12px;
+    display: inline-block;
+    padding: 4px 12px;
     border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--primary);
+    color: #fff;
 }
 
 .badge-primary {

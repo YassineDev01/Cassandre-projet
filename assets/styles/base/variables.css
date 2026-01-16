@@ -1,0 +1,40 @@
+:root {
+    /* Neutres */
+    --black: #263238;
+    --d-grey: #4d4d4d;
+    --grey: #717171;
+    --l-grey: #89939e;
+    --grey-blue: #abbed1;
+    --silver: #f5f7fa;
+    --white: #ffffff;
+
+    /* Couleurs principales */
+    --color-primary: #28cb8b;
+    --color-secondary: #263238;
+    --color-info: #2194f3;
+    --color-success: #2e7d31;
+    --color-warning: #fbc02d;
+    --color-error: #e53835;
+
+    /* Green shades */
+    --green-shade-1: #43a046;
+    --green-shade-2: #388e3b;
+    --green-shade-3: #237d31;
+    --green-shade-4: #1b5e1f;
+    --green-shade-5: #103e13;
+
+    /* Green tints */
+    --green-tint-1: #66bb69;
+    --green-tint-2: #81c784;
+    --green-tint-3: #a5d6a7;
+    --green-tint-4: #c8e6c9;
+    --green-tint-5: #e8f5e9;
+
+    /* Navbar / Footer / Body */
+    --bg-main: var(--silver); /* fond clair pour tout le site */
+    --bg-nav: var(--white); /* fond du header et footer */
+    --text-main: var(--black); /* texte principal sur fond clair */
+    --text-muted: var(--grey-blue); /* texte secondaire / muted */
+    --green-light: var(--green-tint-2);
+    --green-dark: var(--green-shade-4);
+}

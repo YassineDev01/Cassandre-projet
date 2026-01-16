@@ -1,0 +1,171 @@
+/* =========================
+   GLOBAL
+========================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Ubuntu, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+}
+h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.body-1 {
+    font-size: 18px;
+    line-height: 28px;
+}
+.body-3 {
+    font-size: 14px;
+    line-height: 20px;
+}
+.body-4 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+
+    background-color: var(--silver);
+    padding: 4rem;
+}
+
+.hero-content h1 {
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    color: var(--grey);
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image img {
+        margin: 2rem auto 0;
+    }
+}
+
+/* =========================
+   SERVICES CARDS
+========================= */
+.services {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,90 @@
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 32px;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 280px;
+}
+.hero-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* STATS */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 48px 32px;
+    background: #f5f5f5;
+}
+
+.stat h3 {
+    font-size: clamp(24px, 4vw, 36px);
+    margin-bottom: 8px;
+}
+.stat p {
+    font-size: 16px;
+}
+
+/* CLIENTS */
+.clients-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 32px 0;
+}
+
+/* BLOG */
+.blog .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content,
+    .hero-image {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: clamp(24px, 8vw, 36px);
+    }
+    .hero-content p {
+        font-size: clamp(14px, 3vw, 18px);
+    }
+    .cards {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .stats-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
